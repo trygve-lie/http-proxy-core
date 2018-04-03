@@ -1,0 +1,44 @@
+{
+  "name": "@http-proxy/core",
+  "version": "1.0.0-beta.1",
+  "description": "A lightweight http proxy",
+  "main": "lib/proxy.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "bench": "node benchmark/proxy.js",
+    "test": "tap test/*.js",
+    "test:coverage": "tap test/*.js --cov",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/trygve-lie/http-proxy-lite.git"
+  },
+  "keywords": [
+    "http",
+    "proxy",
+    "proxy server",
+    "web proxy",
+    "http proxy"
+  ],
+  "author": "Trygve Lie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trygve-lie/http-proxy-lite/issues"
+  },
+  "homepage": "https://github.com/trygve-lie/http-proxy-lite#readme",
+  "dependencies": {
+    "requires-port": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "4.16.0",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "2.8.0",
+    "benchmark": "2.1.4",
+    "express": "^4.16.2",
+    "tap": "11.0.1"
+  }
+}
